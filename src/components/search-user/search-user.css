@@ -1,0 +1,28 @@
+.parent-div {
+  width: 45%;
+  height: 8rem;
+  display: block;
+  margin: 3rem auto 0 auto;
+  background-color: rgb(0,0,0,0.75);
+  border-radius: 10px;
+}
+
+#su-title {
+  padding: 1rem 0 0.5rem 0;
+  margin-bottom: 0.5rem;
+  display: block;
+  color: white;
+}
+
+#su-input {
+  width: 60%;
+  height: 30%;
+  padding: 0.4rem;
+  margin: 0 1rem 0;
+  background-color:  rgb(255,255,255,0.9);
+  border: 5px solid #00000;
+  border-radius: 10px;
+  font-size: medium;
+  text-indent: 0.5rem;
+  color: rgb(0,0,0,0.75)
+}
