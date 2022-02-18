@@ -26,3 +26,8 @@
   text-indent: 0.5rem;
   color: rgb(0,0,0,0.75)
 }
+
+button {
+  background-color: rgb(0,0,0,0);
+  border-color: rgb(0,0,0,0);
+}
