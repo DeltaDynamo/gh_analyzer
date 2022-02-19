@@ -1,11 +1,11 @@
 header {
-  background-color: rgb(1, 1, 1, 0.5);
+  background-color: rgb(1, 1, 1, 0.8);
   padding:1px;
   height: 3rem;
 }
 
-#title {
-  color: #00fca0;
+.title {
+  color: white;
   text-align: left;
   padding-left: 1rem;
   margin-top: 0.5rem;
@@ -13,7 +13,7 @@ header {
   display: inline;
 }
 
-#header-li {
+.header-li {
   color: white;
   display: inline;
   float: right;
