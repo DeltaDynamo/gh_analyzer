@@ -11,7 +11,7 @@
   padding: 1rem 0 0.5rem 0;
   margin-bottom: 0.5rem;
   display: block;
-  color: white;
+  color: #FFD700;
 }
 
 #su-input {
@@ -31,7 +31,7 @@
   color: white;
   font-size: medium;
   font-weight: bold;
-  background-color: teal;
+  background-color: blueviolet;
   height: 30%;
   padding: 0.5rem;
   border: 0;
@@ -40,7 +40,36 @@
 
 .search:hover {
   color: black;
-  background-color: aqua;
+  background-color: lavender;
   transform: scale(1.1);
   border: 1px solid black;
+}
+
+.errormsg {
+  background-color: rgb(0,0,0,0.8);
+  width: 50%;
+  height: 5rem;
+  margin: auto;
+  border-radius: 10px;
+  color: red;
+  padding: 1rem;
+}
+
+.Initial {
+  width: 45%;
+  background-color: rgb(0,0,0,0.8);
+  color: lavender;
+  margin: auto;
+  border-radius: 10px;
+}
+.ErrState {
+  width: 45%;
+  background-color: rgb(0,0,0,0.8);
+  color: lavender;
+  margin: auto;
+  border-radius: 10px;
+}
+.ErrState h2 {
+  margin: 0;
+  color: orange;
 }

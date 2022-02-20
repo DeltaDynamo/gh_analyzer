@@ -1,11 +1,11 @@
 header {
-  background-color: rgb(1, 1, 1, 0.8);
+  background-color: rgb(1, 1, 1, 0.9);
   padding:1px;
   height: 3rem;
 }
 
 .title {
-  color: white;
+  color: gold;
   text-align: left;
   padding-left: 1rem;
   margin-top: 0.5rem;
