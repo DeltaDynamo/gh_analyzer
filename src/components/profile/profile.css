@@ -8,6 +8,7 @@
   border-radius: 10px;
   padding: 0.5rem;
   margin-bottom: 2rem;
+  box-shadow: 5px 5px grey
 }
 
 .profile-info-title {
@@ -46,7 +47,7 @@
 
 .profile-text h3 {
   margin: 0;
-  padding: 0.2rem 0.2rem 0.2rem 0.5rem;
+  padding: 0.2rem 0 0.2rem 0.5rem;
   text-align: left;
   font-weight: 400;
   width: 100%;
@@ -77,7 +78,7 @@ a:hover {
 .profile-text2 h3 {
   margin: 0;
   font-weight: 400;
-  padding: 0.2rem 0.2rem 0.2rem 0.5rem;
+  padding: 0.2rem 0.2rem 0.3rem 0.5rem;
 }
 
 .hrule {
@@ -99,4 +100,16 @@ a:hover {
   background:  darkviolet;
   border-radius: 5px;
   width: 100%;
+}
+
+.odd img {
+  width: 16px;;
+  height: 16px;
+  vertical-align: center;
+}
+
+.even img {
+  width: 16px;;
+  height: 16px;
+  vertical-align: center;
 }
