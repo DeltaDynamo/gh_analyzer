@@ -67,6 +67,7 @@
   background-color: rgb(0,0,0,0.8);
   color: lavender;
   margin: auto;
+  margin-bottom: 2rem;
   border-radius: 10px;
 }
 .ErrState h2 {

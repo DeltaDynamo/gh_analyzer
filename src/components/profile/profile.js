@@ -59,7 +59,4 @@ function Profile(data){
     </div>
   );
 }
-// <h3 className="odd">User Bio : {bio}</h3>
-// <h3 className="even">Followers : {followers_count} Github Users follow {username}</h3>
-// <h3 className="odd">Following : {username} follows {following_count} Github Users</h3>
 export default Profile;

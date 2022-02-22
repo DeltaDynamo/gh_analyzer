@@ -39,6 +39,7 @@ function Search_User() {
             <h2>Invalid Username !</h2>
             <h2>Please Enter a Valid Github Username to Continue</h2>
           </div>);
+          setProfstat(<div></div>);
         }
         else {
           setProf(<Profile data={profileJson}/>);
