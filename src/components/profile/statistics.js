@@ -1,44 +1,23 @@
 //Imports
 import "./statistics.css"
 import Toprepo from "./charts/toprepo.js";
-
-//Function
-//To filter out the Orignal raw data and store only necessary parameters
-//Returns an Array of Objects And reach object represents a repo owned by user
-//with several values
-function filterdata(data) {
-  let res = [];
-
-  for(let i=0;i<data.length;i++){
-    if(data[i].fork==false) {
-      //console.log("Yes");
-      let obj = {};
-      obj.name = data[i].name;
-      obj.langurl = data[i].languages_url;
-      obj.commiturl = data[i].commits_url;
-      obj.size = data[i].size;
-      obj.fork = data[i].forks_count;
-      obj.stars = data[i].stargazers_count;
-      obj.watch = data[i].watchers_count;
-
-      //console.log(obj);
-      res.push(obj);
-    }
-  }
-  return res;
-}
+import filterdata from "../validation/filterdata.js"
 
 
 function ProfileStatistics(statdata) {
-  //console.log(statdata.statdata[0]);
-  let filtered_data = filterdata(statdata.statdata);
+  //console.log(statdata.statdata.langdata);
+  let filtered_data = {
+    langdata :statdata.statdata.langdata,
+    statdata: filterdata(statdata.statdata.stat)
+  }
+
 
   return (
     <div className="stats-section">
       <div className="stats-info-title">
         <h2>Profile Statistics</h2>
       </div>
-      <Toprepo data={filtered_data}/>
+      <Toprepo className="plot" data={filtered_data}/>
     </div>
   );
 }

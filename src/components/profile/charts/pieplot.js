@@ -1,5 +1,5 @@
 import { Pie } from 'react-chartjs-2';
-import { colorpallete } from "./colors";
+import { colorpallete } from "../../validation/colors.js";
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
 import { StyleOptions } from "./options.js"
 import "./styles.css"

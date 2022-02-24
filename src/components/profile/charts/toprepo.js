@@ -1,62 +1,29 @@
 import DoughnutPlot from "./doughnutplot.js";
 import PiePlot from "./pieplot.js"
-import { colorpallete } from "./colors";
 import "./styles.css"
-import axios from 'axios'
 import React, {useState, useEffect} from 'react';
-
-//Function to return final data to be fed into doughnut plot by size
-//FMust feed the output of sortbysize function
-function finaldatabysize(data) {
-  const label = [];
-  const dataset = [];
-  const object = {};
-  const sizes = [];
-
-  for(let i=0;i<data.length;i++){
-    label.push(data[i][1]);
-    sizes.push(data[i][0]);
-  }
-
-  object.label = 'Top Repos By Size';
-  object.data = sizes;
-  object.borderColor = ['rgba(255,206,86,0.2)'];
-  object.backgroundColor = colorpallete;
-  object.pointBackgroundColor = 'rgba(255,206,86,0.2)';
-
-  dataset.push(object);
-
-  return {
-    id: "Top repo by Size",
-    labels: label.map(val => {return val;}),
-    datasets: dataset
-  }
-}
-
-//Data by name of repo and its size
-//returns a 2d array with first element as size of repo and second no of repo
-function sortbysize(resdata){
-  let result = [];
-  for(let i=0;i<resdata.length;i++){
-    let arr = [];
-    arr.push(resdata[i].size);
-    arr.push(resdata[i].name);
-    result.push(arr);
-  }
-  result.sort((a,b) => {
-    return a[0]-b[0];
-  });
-
-  let res = [];
-  for(let i=result.length - 1;i>=Math.max(result.length-10,0);i--){
-    res.push(result[i]);
-  }
-  return res;
-}
+import sortbysize from "../../validation/sortbysize.js";
+import finaldatabysize from "../../validation/finaldatabysize.js";
+import sortbypop from "../../validation/sortbypop.js";
+import finaldatabypop from "../../validation/finaldatabypop.js";
+import sortbylang from "../../validation/sortbylang.js";
+import finaldatabylang from "../../validation/finaldatabylang.js";
 
 function Toprepo(data) {
-  let finaldata_size = finaldatabysize(sortbysize(data.data));
-  //console.log(data);
+
+  if(data.data.langdata.length==0 || data.data.statdata.length==0){
+    return (
+      <h4 className="errrepo">This User does not have any Personal Repositories</h4>
+    );
+  }
+  let finaldata_size = finaldatabysize(sortbysize(data.data.statdata));
+  //console.log(data.data.langdata[0]);
+
+  let finaldata_pop = finaldatabypop(sortbypop(data.data.statdata));
+  //console.log(finaldata_pop);
+
+  let finaldata_lang = finaldatabylang(sortbylang(data.data.langdata));
+  //console.log(sortbylang(data.data.langdata));
 
   if(data.data.length==0){
     return <h2 className="errrepo">This user has no Public Repositories</h2>;
@@ -67,10 +34,10 @@ function Toprepo(data) {
       <DoughnutPlot data={finaldata_size} />
     </div>
     <div className="plot">
-      <DoughnutPlot data={finaldata_size}/>
+      <PiePlot data={finaldata_pop}/>
     </div>
     <div className="plot">
-      <PiePlot data={finaldata_size}/>
+      <DoughnutPlot data={finaldata_lang} />
     </div>
     </div>
   );

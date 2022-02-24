@@ -6,7 +6,9 @@ function validateusername(username) {
   user = user.trim();
 
   let result = "";
-  for(var i=0;i<user.length;i++){
+  let start = 0;
+  if(user[0]=='/') start = 1;
+  for(var i=start;i<user.length;i++){
     if(user[i]=='/') break;
     result += user[i];
   }

@@ -16,4 +16,19 @@
   width: 50%;
   border-radius: 5px;
   margin: auto;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 0.2rem;
+}
+.rec{
+  text-align: left;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  font-weight: 500;
+  background: lavendar;
+  border-radius: 5px;
+}
+img {
+  width: 18px;;
+  height: 18px;
+  vertical-align: center;
 }

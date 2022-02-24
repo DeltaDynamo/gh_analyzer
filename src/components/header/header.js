@@ -4,8 +4,8 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 function Header() {
   return (
     <header>
-    <h2 className="title">Github Profile Analyzer</h2>
-    <h3 className="header-li">About</h3>
+    <h2 className="title"><a className="Headerlink" href="../public/index.html">Github Profile Analyzer</a></h2>
+    <h3 className="header-li"><a className="Headerlink" href="https://github.com/AnubhavSrivastavaGithub/gh_analyzer" target="blank">About</a></h3>
     </header>
   );
 }
