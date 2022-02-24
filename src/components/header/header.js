@@ -1,5 +1,4 @@
 import "./header.css";
-import GitHubIcon from '@mui/icons-material/GitHub';
 
 function Header() {
   return (
