@@ -57,7 +57,7 @@
 
 <!-- Screenshots -->
 
-## Screenshots![Uploading image.png…]
+## Screenshots!
 ![image](https://user-images.githubusercontent.com/50038824/158022685-dd2ca810-417a-40c4-b64d-4ea8199790ba.png)
 ![image](https://user-images.githubusercontent.com/50038824/158022324-1abe152a-08db-4df6-bea8-9880140a2094.png)
 ![image](https://user-images.githubusercontent.com/50038824/158022332-a3b23724-d62e-478e-ac77-2d765e399310.png)
