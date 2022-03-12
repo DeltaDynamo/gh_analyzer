@@ -1,70 +1,65 @@
-# Getting Started with Create React App
+<!-- Header Image -->
+<br />
+<p align="center">
+  <img src="https://socialify.git.ci/AnubhavSrivastavaGithub/gh_analyzer/image?font=Bitter&forks=1&issues=1&language=1&name=1&owner=1&pattern=Charlie%20Brown&pulls=1&stargazers=1&theme=Dark" alt="gh_analyzer" width="640" height="320" />
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+  <h1 align="center">Github Profile Analyzer</h1>
 
-## Available Scripts
+  <h3 align="center">
+    Simple Easy to Use Website to analyze your friend's Github Profile
+    <br />
+    <br />
+    <a href="http://ghanalyzer.herokuapp.com/">View Live Deployment</a>
+    ·
+    <a href="https://github.com/AnubhavSrivastavaGithub/gh_analyzer/issues">Request Feature</a>
+  </h3>
+</p>
 
-In the project directory, you can run:
+<!-- TABLE OF CONTENTS -->
+<details open="open">
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#key-features">Key Features</a>
+    </li>
+    <li><a href="#screenshots">Screenshots</a></li>
+  </ol>
+</details>
 
-### `npm start`
+<!-- ABOUT THE PROJECT -->
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## About The Project
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Github Profile Analayzer is a **simple, easy to use** website which uses the **Github API** to fetch data and show various attributes asscociated with a user's profile in a highly intuitive manner.
+- If you are curious to know what your friend is working upon recently or maybe what languages they use the most, we have got everything to reveal those secrets to you :sunglasses:.
 
-### `npm test`
+### Built With
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- [React](https://reactjs.org/) | [Github API](https://docs.github.com/en/rest) | [Axios](https://www.npmjs.com/package/axios) | [React Chartjs 2](https://www.npmjs.com/package/react-chartjs-2)
 
-### `npm run build`
+<!-- Key Features -->
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Key Features
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Simple Easy to Use UI**
+- Display **16+ unique attributes** associated with User Profile
+- View **Top 10 Repositories By Size**
+- View **Top 10 Most Popular Repositories**
+- View **Top 10 Languages**
+- View **Recent Actions** performed by the User
+- Supports Upto **5000 API Calls/hour** i.e. upto **80 API Calls/min**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<!-- Screenshots -->
 
-### `npm run eject`
+## Screenshots
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<!-- CONTRIBUTING -->
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Made with <span style="color: #e25555;">&#9829;</span> by Anubhav Srivastava
