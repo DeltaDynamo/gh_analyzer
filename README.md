@@ -9,7 +9,6 @@
     Simple Easy to Use Website to analyze your friend's Github Profile
     <br />
     <br />
-    <a href="https://ghanalyzer.netlify.app/">View Live Deployment</a>
     ·
     <a href="https://github.com/AnubhavSrivastavaGithub/gh_analyzer/issues">Request Feature</a>
   </h3>
